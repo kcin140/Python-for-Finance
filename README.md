@@ -1,5 +1,4 @@
-# Python for Finance
- Algorithms for financial data analysis
+# Dollar Cost Averaging Service 
 
 -Understand if there is a day of the month that correlates with an upward or downward influx of the market price. For example, if I were to begin a DCA plan in 1969 where I put in $100/mo into a total market index fund, which day of the month would be the ideal day to buy and produce the largest return. Subsequently, which day of the month would correlate with the lowest return. 
 
@@ -10,3 +9,10 @@
 Data source: Yahoo API
 
 Primary fund to look at: VTSMX and ^GSPC
+
+
+Feature Enhancements Log: 
+
+1. Debug beginning_of_month_service- not complete
+2. Add function that can take in any day of the month as a monthly frequency input- not complete
+3. Add error for each function if the inputted date range is invalid- not complete
