@@ -8,4 +8,5 @@
 -Potential hypothesis: Buying on the 1st or the 15th of the month may result in lower long term DCA returns due to a slightly higher saturated market from 401k deposits or others that DCA. 
 
 Data source: Yahoo API
+
 Primary fund to look at: VTSMX and ^GSPC
