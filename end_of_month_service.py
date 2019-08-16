@@ -5,7 +5,10 @@ import pandas as pd
 import datetime
 # variables needed are final value of investments, total amount invested, and total return
 
-
+#end_of_month_DCA takes in 4 variables: a stock ticker(x), a start and end date and finally a monthly contribution amount invested into this stock
+#it will evaluate these inputs by pulling stock data from a yahoo API
+# the variable 'all_end' denotes the date range frequency of the calculator- 'BM' means the monthly contribution will buy stock on the last trading day of each month during the time period
+#the result of the function will give us: the return on investment(%), the total amount invested, and the final amount that invested would be worth
 def end_of_month_DCA(x, start_date, end_date, monthly_contribution):
     panel_data = data.DataReader(x, 'yahoo', start_date, end_date, monthly_contribution)['Adj Close']
     all_end = pd.date_range(start=start_date, end=end_date, freq='BM')
