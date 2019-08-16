@@ -2,6 +2,7 @@
 from pandas_datareader import data
 import matplotlib.pyplot as plt
 import pandas as pd
+import datetime
 # variables needed are final value of investments, total amount invested, and total return
 
 
@@ -27,4 +28,7 @@ def end_of_month_DCA(x, start_date, end_date, monthly_contribution):
 
 
 
+start = datetime.datetime(2010, 1, 1)
+end = datetime.datetime(2013, 1, 27)
+end_of_month_DCA('IBM', start, end, 100 )
 
